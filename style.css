@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+}
+body {
+    background-color: #eee;
+    font-family: sans-serif;
+
+}
+.profile {
+    width: 40%;
+    float: right;
+}
+.profile img {
+    width: 100%;
+    height: 50%;
+    border-radius: 50%;
+    border-bottom: 5px solid gray
+}
+.about {
+    margin-left: 7px;
+    font-family:inherit;
+    font-weight: bold;
+}
+.profile-info {
+    width: 60%;
+    height: 100vh;
+    float: left;
+    padding: 0 30px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.profile-info::-webkit-scrollbar{
+    width: 0;
+}
+.profile-info h1 {
+    color: #1260a1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.profile-info h2{
+    color: rgb(0, 88, 195);
+}
+.social {
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+.social img {
+    margin-top: 20px;
+    width: 35px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 2s;
+}
+.social img:hover{
+    transform: rotate(360deg);
+}
+.profile-info h2 {
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.services {
+    display: inline-block;
+    width: 28%;
+    padding: 30px 10px;
+    margin: 2%;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(37, 73, 214 , 0.18)
+}
+.services img {
+    width: 60%;
+    margin: 5px;
+}
+.services small {
+    padding-top: 15px;
+    display: block;
+}
+.form-box {
+    margin-top: 30px;
+}
+.input-group input {
+    width: 45%;
+    border: 0;
+    outline: none !important;
+    padding: 10px;
+    background-color: rgb(226, 224, 224);
+    margin: 2%;
+    display: inline-block;
+}
+.text-area textarea {
+    width: 95%;
+    border: 0;
+    outline: none !important;
+    padding: 10px;
+    background-color: rgb(226, 224, 224);
+    margin: 2%;
+}
+.sub {
+    text-align: center;
+    border: 0;
+    outline: none !important;
+    padding: 10px;
+    background-color: rgb(48, 139, 192);
+    margin: 2%;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* .projects{
+
+} */
+.projects img{
+    width: 31%;
+    padding: 4px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.cont {
+    margin:5% 0 5% 25%;
+    width: 65%;
+}
+.cont img {
+    width: 20px;
+    margin: -5px 10px;
+}
+.cont span {
+    margin: 3%;
+}
+.copy {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(173, 172, 172);
+}
+@media Only Screen and (max-width:900px) {
+    .about {
+        width: 100%;
+    }
+    .profile-info{
+        width: 95%;
+    }
+    .profile img {
+        width: 90%;
+        
+    }
+    .services {
+        width: 95%;
+        margin-bottom: 15px;
+    }
+    .cont span {
+        font-size: 10px;
+    }
+    .cont img {
+        width: 15px;
+    }
+}
